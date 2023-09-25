@@ -1,0 +1,12 @@
+.CSSCarousel {
+    width: 100%;
+    object-fit:cover;
+    background-color:rgb(18, 18, 18) ;
+
+}
+
+.carousel-indicators {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+

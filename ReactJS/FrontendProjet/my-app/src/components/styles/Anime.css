@@ -1,0 +1,236 @@
+.AnimeContainer {
+    
+    margin: auto;
+    width: 80%;
+    min-width: 800px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border : 5px solid rgb(180, 184, 197);
+    border-radius: 40px;
+    box-shadow: #A6CFD5  0px 0px 30px 1px;
+    color: #E5E5E5;
+}
+.AnimeContainerL{
+    display: flex;
+    border : 5px solid rgb(209, 230, 211);
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 2%;
+    /* box-shadow: 10px 10px 10px rgba(182, 7, 7); */
+    
+}
+
+/* Côté gauche */
+.AnimeContainerLeft{
+    margin-right: 25px;
+    background-color: transparent;
+}
+
+
+#AnimePoster{
+    border-radius: 25px;
+    width: 350px ;
+    height: 650px;
+}
+
+
+/* Côté droite */
+.AnimeContainerRight{
+    background-color: transparent;
+    font-size: larger;
+    overflow-y: scroll;
+    width: 100%;
+    height: 780px ;
+}
+
+.AnimeContainerRightFirst {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.AnimeTitre{
+    font-size: 35px;
+    text-align: left;
+    border-top: rgb(168, 12, 12, 0.5) 5px solid;
+    border-bottom: rgb(168, 12, 12, 0.5) 5px solid;
+    border-right: rgb(168, 12, 12, 0.5) 5px solid;
+    border-radius: 0 15px 15px 0 ;
+    width: 90%;
+    margin: 0;
+}
+
+.LikedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 10%;
+}
+
+.Liked {
+    border-radius: 12px;
+}
+
+.AnimeContainerRightSecond{
+    background-color: transparent;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.AnimeCom{
+    border-radius: 25px;
+    background-color: #E5E5E5;
+    color: #000000;
+    font-weight: 700;
+
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.AnimeComForm {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.AnimeCommentaire{
+    background-color: transparent;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 80%;
+}
+
+.AnimeAddCom{
+    background-color: rgb(197, 188, 188);
+    width: 220px;
+    height: 43.2;
+    padding: 7px;
+    margin: none;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px black solid;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 50px 100px -50px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.AnimeAddCom:hover{
+    background-color: rgb(138, 136, 136);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 50px 100px -50px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.AnimeAddCom:active{
+    /* background-color: rgb(75, 75, 75); */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px;    
+    transform: scale(0.95);
+}
+
+/* Commentaire */
+.AnimeComMap{
+    background-color: #E5E5E5;
+    border-radius: 25px;
+    color: #000000;
+    margin-top: 20px;
+    height: 55%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.ComContainer {
+    width: 100%;
+    background-color: rgb(180, 184, 197);
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    padding: 10px 5px;
+
+}
+
+.ComContainer:hover .ComDelete {
+    display: block;
+}
+
+.ComUser {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.ComDelete{
+    background-color: transparent;
+    margin-right: 0.5rem;
+    font-weight: 700;
+    font-size: 14px;
+    display: none;
+    border-radius: 15px;
+    padding: 0 5px;
+    box-shadow: 2px 2px 4px black;
+    transform: scale(0.9);
+}
+
+.ComEdit {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+
+}
+
+
+.ComDelete:hover {
+    transform: scale(1);
+}
+
+.Com {
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .AnimeContainer{
+        border: none;
+        width:100%;
+        min-width: 300px;
+    }
+
+    .AnimeContainerL{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .AnimeContainerLeft{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #AnimePoster {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ListeLikeProfil {
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,60 @@
+.ProfilContainer {
+    width: 70%;
+    margin: auto;
+    background-color: #A6CFD5;
+    color: black;
+    font-weight: 700;
+}
+
+.Username {
+    font-size: 3rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+}
+
+.h2 {
+    margin-left: 1rem;
+}
+
+.titre {
+    position: relative;
+    top: -250px;
+    pointer-events : none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;  
+    margin: auto;
+    line-height: normal;
+    text-align: center;
+}
+
+.ListeLikeProfil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #C2E7D9;
+}
+
+.LikeContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E7D9;
+}
+
+.LikeContainer {
+    background-color: #C2E7D9;
+    min-height: 50vh;
+}
+
+
+@media screen and (max-width: 480px) {
+    .ProfilContainer {
+        width: 90%;
+    }
+
+}

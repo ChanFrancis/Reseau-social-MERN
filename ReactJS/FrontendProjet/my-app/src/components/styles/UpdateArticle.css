@@ -1,0 +1,35 @@
+.UpdateContainer {
+    width: 70%;
+    margin: auto;
+    background-color: #000814;
+    min-height: 100vh;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+.h1 {
+    padding: 1.5rem 0;
+  }
+
+  .Inscription {
+    width: 300px;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .SubmitInscription {
+    width: 145px;
+    margin: auto;
+  }
+
+  .InputInscription {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  

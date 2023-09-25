@@ -1,0 +1,225 @@
+/* Header content */
+.ArticleHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.AjouteArticle {
+    width: 150px;
+    border-radius: 15px;
+    background-color: #A6CFD5;
+    margin: auto;
+    transition: 0.3s ease-out;
+
+}
+
+.AjouteArticleTexte {
+    color: black;
+    text-decoration: none;
+}
+
+.AjouteArticle:hover {
+    transform: scale(1.1);
+    background-color: #0D0221;
+    color: white;
+    border-color: black;
+    transition: 0.2s ease-out;
+}
+
+.AjouteArticle:hover .AjouteArticleTexte {
+
+    color: white;
+
+}
+
+/* Les cadres articles */
+
+article {
+    border-radius: 16px;
+    box-shadow: none;
+    overflow: hidden;
+    color: black;
+    -webkit-transition: transform 0.2s;
+
+}
+
+.CSSArticle {
+    margin: 3rem 0;
+}
+
+.articles {
+    display: grid;
+    max-width: 1200px;
+    min-width: 320px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.CSSArticle {
+    text-decoration: none;
+}
+
+.article-wrapper {
+    background-color: aliceblue;
+}
+
+article h2 {
+    margin-bottom: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+
+}
+
+.ArticleIMGContainer {
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    width: 368px;
+    overflow: hidden;
+}
+
+.ArticleIMG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+    padding: 24px;
+    background-color: #e9e9e9;
+}
+
+.Article-Titre{
+    height: 65px;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.Article-Description {
+    height: 100px;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+
+}
+
+.read-more {
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.ArticleEdit {
+    width: 150px;
+    margin: 5px auto;
+}
+
+.ArticleEditButton {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #A6CFD5;
+    -webkit-transition: transform 0.5s;
+}
+
+
+/* Animation des boutons edit */
+.ArticleEditTexte {
+
+    color: #0D0221;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.ArticleEditButton:hover {
+    background-color: black;
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+}
+
+.ArticleEditButton:hover .ArticleEditTexte {
+    color: white;
+    font-weight: 800;
+}
+
+textarea
+{
+   resize: none;
+}
+
+/* Animation des Cartes */
+
+.Article:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+    box-shadow:
+        rgba(255, 255, 255, 0.25) 0px 5px 5px,
+        rgba(255, 255, 255, 0.12) 0px -12px 30px,
+        rgba(255, 255, 255, 0.12) 0px 4px 6px,
+        rgba(255, 255, 255, 0.17) 0px 12px 13px,
+        rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    ;
+}
+
+@media screen and (max-width: 1100px) {
+    article {
+        container: card/inline-size;
+    }
+    .articles {
+        gap: 16px;
+    }
+
+    .article-body p {
+        display: none;
+    }
+}
+
+@container card (min-width: 320px) {
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
+    }
+
+    .article-body {
+        padding-left: 0;
+    }
+
+    .ArticleIMGContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .ArticleIMGContainer img {
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

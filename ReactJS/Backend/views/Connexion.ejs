@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <%- include('partials/bootstrapCDN.ejs') %>
+
+    <title>Identification</title>
+</head>
+<body>
+    
+    <%- include('partials/navbar.ejs') %>
+
+    <br>
+    <h1>Identificaiton</h1>
+    <br>
+
+    <form action="/api/connexion" method="post">
+        
+        <label for="">Username</label>
+        <input type="text" name="username">
+<br><br>
+        <label for="">Password</label>
+        <input type="password" name="password">
+<br><br>
+        <input type="submit" value="Connexion">
+
+    </form>
+<br>
+<form action="/inscription">
+    <input type="submit" value="Inscription">
+</form>
+
+
+
+</body>
+</html>

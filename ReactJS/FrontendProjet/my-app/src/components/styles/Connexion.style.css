@@ -1,0 +1,200 @@
+.fullpage{
+    height: 95vh;
+    
+    background: url("../images/ConBG.jpg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* position: absolute;
+    top: 50px; */
+}
+
+.login{
+    padding-top: 70px;
+}
+
+.cadreBorder{
+    width: 1380px;
+    min-width: 780px;
+    height: 530px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.cadre{
+    width: 1350px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(117, 119, 128);
+    border-radius: 25px;
+    padding: 25px;
+    flex-basis: 100px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+
+
+.image{
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    /* flex-basis: 100px; */
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.narutoIMG{
+  width: 280px;
+  height: 600px;
+ 
+}
+
+
+.form{
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    height: 400px;
+    width: 400px;   
+    padding: 25px 0px;
+    color : black;
+    background-color: rgb(180, 184, 197);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.input{
+    border-radius: 25px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.text{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+}
+
+.bienvenue {
+    max-width: 450px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+hr{
+    width: 150px;
+    margin: none;
+}
+
+.connexion{
+    margin: none;
+    border-radius: 25px;
+    width: 150px;
+    box-shadow: 4px 4px 10px black;
+    border: 1px solid black;
+}
+
+.connexion:hover {
+    transform: scale(1.075);
+}
+
+.nouveauCompte{
+    border-radius: 25px;
+    width: 300px;
+    box-shadow: 4px 4px 10px black;
+    border: 1px solid black;
+}
+
+.nouveauCompte:hover {
+    transform: scale(1.075);
+    
+}
+
+.nouveauCompteTexte {
+    text-decoration: none;
+    color: black;
+}
+.nouveauCompteTexte:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+    .bienvenue{
+        display: none;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .cadre {
+        width: 800px;
+    }
+    .cadreBorder {
+        width: 830px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .text{
+        display: none;
+    }
+
+   
+
+    .image{
+        display: none;
+    }
+
+    .cadre {
+        width: 400px;
+        margin: 0;
+        background-color:transparent;
+    }
+
+    .cadreBorder {
+        min-width: 0px;
+        max-width: 320px;
+        background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .formBox {
+        width: 320px;
+        margin: 0;
+        
+    }
+
+}
