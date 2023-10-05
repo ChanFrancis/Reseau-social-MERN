@@ -9,12 +9,12 @@ Développement d'un réseau social (back-end et front-end) avec MongoDB, Express
 
 <h2>Fonctionnalité</h2> 
 
-### 1. Connexion (JSON Web Token)
+### 1. Page de Connexion (JSON Web Token)
 - On peut s’inscrire au site internet
 - Possibilité de se connecter
   <br><br>
 
-### 2.  Fil des actualités (CRUD)
+### 2.  Page Actualités (CRUD)
 Requis : <br>
 Les utilisateurs peuvent consulter la page mais seuls les admins peuvent utiliser le CRUD.
 
@@ -24,7 +24,7 @@ Les utilisateurs peuvent consulter la page mais seuls les admins peuvent utilise
 - Suppression d’une actualité
     <br><br>
 
-### 3. Animes (CRUD)
+### 3. Page Animes (CRUD)
 Requis : <br>
 L'utilisateur doit être connecter afin de consulter cette page <br>
 Les membres peuvent consulter la page mais seuls les admins peuvent utiliser le CRUD.
@@ -35,7 +35,9 @@ Les membres peuvent consulter la page mais seuls les admins peuvent utiliser le 
 - Suppression d’un anime
    <br><br>
 
-### 4. Messages privés
+### 4. Page Messagerie (Socket IO)
+Description : <br>
+Les membres peuvent accéder au Chat privé et 
 Requis : <br>
 L'utilisateur doit être connecter afin de consulter cette page <br>
 
@@ -47,7 +49,7 @@ L'utilisateur doit être connecter afin de consulter cette page <br>
 - Recevoir une alerte pour les messages non lu
    <br><br>
 
-### 5. Commentaires
+### 5. Commentaires (CRD)
 Requis : <br>
 Les utilisateurs peuvent consulter les commentaires mais seuls les membres/admins peuvent commenter.
 
