@@ -6,7 +6,7 @@
 <br>
 <h3>Projet :</h3>
 Développement d'un réseau social (back-end et front-end) avec MongoDB, Express, React et NodeJS (MERN Stack).<br>
-ODM : Mongoose <br><br>
+ORM : Mongoose <br><br>
 
 <h2>Fonctionnalité</h2> 
 
