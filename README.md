@@ -17,7 +17,7 @@ ODM : Mongoose <br><br>
 
 ### 2.  Page Actualités (CRUD)
 Requis : <br>
-Les utilisateurs peuvent consulter la page mais seuls les admins peuvent utiliser le CRUD.
+Les utilisateurs peuvent consulter la page, mais seuls les admins peuvent utiliser le CRUD.
 
 - Création d’actualité
 - Consultation des fils d’actualités
@@ -27,8 +27,8 @@ Les utilisateurs peuvent consulter la page mais seuls les admins peuvent utilise
 
 ### 3. Page Animes (CRUD)
 Requis : <br>
-L'utilisateur doit être connecter afin de consulter cette page <br>
-Les membres peuvent consulter la page mais seuls les admins peuvent utiliser le CRUD.
+L'utilisateur doit être connecté afin de consulter cette page. <br>
+Les membres peuvent consulter la page, mais seuls les admins peuvent utiliser le CRUD.
 
 - Création d’un anime
 - Consultation des animes
@@ -40,7 +40,7 @@ Les membres peuvent consulter la page mais seuls les admins peuvent utiliser le 
 Description : <br>
 Les membres peuvent accéder au Chat privé et 
 Requis : <br>
-L'utilisateur doit être connecter afin de consulter cette page <br>
+L'utilisateur doit être connecter afin de consulter cette page. <br>
 
 - Possibilité d’envoyer un message privé à une autre personne
 - Possibilité de voir si les membres sont connectés
@@ -52,7 +52,7 @@ L'utilisateur doit être connecter afin de consulter cette page <br>
 
 ### 5. Commentaires (CRD)
 Requis : <br>
-Les utilisateurs peuvent consulter les commentaires mais seuls les membres/admins peuvent commenter.
+Les utilisateurs peuvent consulter les commentaires, mais seuls les membres/admins peuvent commenter.
 
 - Possibilité de commenter un article ou un anime
 - Possibilité de supprimer ses commentaires
@@ -60,6 +60,6 @@ Les utilisateurs peuvent consulter les commentaires mais seuls les membres/admin
 
 ### 6. Profil / Like
 Requis : <br>
-L'utilisateur doit être connecter afin de consulter leur profil<br>
+L'utilisateur doit être connecté afin de consulter leur profil.<br>
 
-- La page profil doit contenir les animes que le membre a liké
+- La page Profil doit contenir les animes que le membre a liké
