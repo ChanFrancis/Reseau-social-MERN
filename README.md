@@ -47,6 +47,7 @@ L'utilisateur doit être connecter afin de consulter cette page. <br>
 - Possibilité de consulter l’historique des messages
 - Possibilité de sélectionner la personne avec qui je m'adresse
 - Recevoir une alerte pour les messages non lu
+- Les alertes disparaissent losque l'on clique dessus ou lorsqu'on répond au message
    <br><br>
 
 ### 5. Commentaires (CRD)
