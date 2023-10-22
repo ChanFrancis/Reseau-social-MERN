@@ -49,6 +49,9 @@ L'utilisateur doit être connecter afin de consulter cette page. <br>
 - Recevoir une alerte pour les messages non lu
 - Les alertes disparaissent losque l'on clique dessus ou lorsqu'on répond au message
    <br><br>
+![image](https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/54ed5772-ea13-409d-82c9-e0d0ceb0ff24)
+
+  <br><br>
 
 ### 5. Commentaires (CRD)
 Requis : <br>
