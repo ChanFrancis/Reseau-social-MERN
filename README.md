@@ -24,6 +24,9 @@ Les utilisateurs peuvent consulter la page, mais seuls les admins peuvent utilis
 - Modification des actualités
 - Suppression d’une actualité
     <br><br>
+    ![image](https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/5adc8052-bc46-4134-9d36-2bf58db91a4b)
+    <br><br>
+
 
 ### 3. Page Animes (CRUD)
 Requis : <br>
@@ -35,11 +38,14 @@ Les membres peuvent consulter la page, mais seuls les admins peuvent utiliser le
 - Modification d’un anime
 - Suppression d’un anime
    <br><br>
+   ![image](https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/14022152-add0-4b12-a9ad-c8cda9cd673f)
+   <br><br>
+
 
 ### 4. Page Messagerie (Socket IO)
 Description : <br>
 Les membres peuvent accéder au Chat privé et envoyer des messages aux autres membres. <br>
-L'utilisateur doit être connecter afin de consulter cette page. <br>
+L'utilisateur doit être connecter afin de consulter cette page.
 
 - Possibilité d’envoyer un message privé à une autre personne
 - Possibilité de voir si les membres sont connectés
@@ -60,6 +66,9 @@ Les utilisateurs peuvent consulter les commentaires, mais seuls les membres/admi
 - Possibilité de commenter un article ou un anime
 - Possibilité de supprimer ses commentaires
    <br><br>
+   ![image](https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/2c23dcf3-4276-49f6-b965-069102acb5fa)
+   <br><br>
+
 
 ### 6. Profil / Like
 Requis : <br>
