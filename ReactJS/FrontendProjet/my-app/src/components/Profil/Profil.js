@@ -94,7 +94,7 @@ function Profil() {
                         </Link>
                         <br />
                         {Hover && (
-                            <div className='titre'>
+                            <div className='titre1'>
                                 {EvenementId == index ? like.anime : ""}
                             </div>
                         )}

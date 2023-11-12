@@ -40,7 +40,6 @@
 /* Chat Liste */
 .ChatList {
     width: 250px;
-    min-height: 95vh;
     background-color: #C2E7D9;
     padding: 10px 0;
 }
@@ -116,6 +115,7 @@
     display: flex;
     justify-content: flex-start;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0,0.5);
@@ -225,8 +225,7 @@
     .ChatList {
         position: absolute;
         opacity : 0;
-
-        height: 0;
+        border-radius: 0 0 15px 0;
         width: 200px;
         padding: 45px 0;
         transition: opacity  0.1s ease-out;
@@ -246,7 +245,6 @@
 
     .ShowChat {
         opacity :1;
-        height: 95vh;
         transition: opacity 0.1s ease-out;
     }
 }
