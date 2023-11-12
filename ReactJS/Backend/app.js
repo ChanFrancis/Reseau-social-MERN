@@ -5,8 +5,6 @@ var app = express();
 // dotenv
 require('dotenv').config();
 
-
-
 // Too busy
 const toobusy = require('toobusy-js');
 
@@ -19,13 +17,10 @@ const hpp = require('hpp');
 
 app.use(hpp())
 
-
 // Cache control
 const nocache = require('nocache');
 
 app.use(nocache());
-
-
 
 // Bodyparser
 var bodyParser = require('body-parser');
@@ -165,7 +160,6 @@ const http = require('http');
 const socketIO = require('socket.io');
 const server = http.createServer(app);
 
-
 const io = socketIO(server, {
     cors: {
         origin: 'http://localhost:3000',
@@ -175,26 +169,12 @@ const io = socketIO(server, {
     }
 })
 
-// Les utilisateurs de socket
-const userSockets = new Map();
-
-
 io.on('connection', (socket) => {
 
     console.log('New client connected', socket.id);
 
-    // if (!userSockets.has(socket.id)) {
-    //     socket.disconnect(true);
-    //   }
-
     io.emit('online', true);
 
-    // socket.on('connect', ({ socket }) => {
-    //     userSockets.set(MeID, socket);
-    //     console.log("usersockets", userSockets);
-
-    //     console.log("Connected Users : ",connectedUsers)
-    // });
 
     socket.on('privateMessage', (data) => {
         console.log('received message', data);
@@ -213,7 +193,6 @@ io.on('connection', (socket) => {
             })
             Data.save().then(() => {
                 console.log("Message saved")
-                // res.redirect('')
             })
                 .catch(err => console.log("Error"));
 
@@ -241,45 +220,10 @@ io.on('connection', (socket) => {
             .catch(err => console.log(err));
     });
 
-    socket.on('logout', ({ socket }) => {
-        const userSocket = userSockets.get(socket);
-        if (userSocket) {
-            userSocket.disconnect();
-            userSockets.delete(socket);
-            console.log(`User disconnected: ${MeID}`);
-        }
+    socket.on('disconnect', (data) => {
+        console.log('disconnected')
     })
-
-    socket.on('disconnect', (socket) => {
-
-        const userId = Array.from(userSockets.entries())
-            .find(([_, socketInstance]) => socketInstance === socket)?.[0];
-
-        if (userId) {
-            userSockets.delete(userId);
-            console.log(`User disconnected: ${userId}`);
-        }
-
-        // socket.disconnect()
-        // console.log('disconnected')
-    })
-
-
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -435,7 +379,6 @@ app.post('/submitAnime', upload.single('poster'), function (req, res) {
         })
         Data.save().then(() => {
             console.log("Data saved")
-            // res.redirect('')
         })
             .catch(err => console.log("Error"));
     }
@@ -446,7 +389,6 @@ app.get('/', validateToken, function (req, res) {
     Anime.find().then((data) => {
         // console.log(data);
         res.json(data);
-        // res.render('home', {data: data});
     })
         .catch(err => console.log(err))
 });
@@ -457,7 +399,6 @@ app.get('/anime/:id', function (req, res) {
         _id: req.params.id
     }).then(data => {
         res.json(data);
-        // res.render('EditAnime', {data: data});
     })
         .catch(err => console.log(err))
 });
@@ -485,7 +426,6 @@ app.put('/anime/edit/:id', upload.single('poster'), function (req, res) {
         .then(data => {
             console.log("Data updated");
             res.json(data);
-            // res.redirect('http://localhost:3000/animes')
         })
         .catch(err => console.log(err));
 },);
@@ -584,10 +524,6 @@ app.get('/likes', validateTokenID, function (req, res) {
 
 // ------User---------
 
-// app.get('/inscription', function(req, res) {
-//     res.render('Inscription');
-// });
-
 app.post('/api/inscription', function (req, res) {
     const Data = new User({
         username: req.body.username,
@@ -602,7 +538,6 @@ app.post('/api/inscription', function (req, res) {
     })
         .catch(err => {
             if (err.code === 11000)
-                // res.send('duplicate email found');
                 res.status(409).send('Duplicate email found');
             else
                 console.log(err);
@@ -624,7 +559,7 @@ app.post('/api/connexion', function (req, res) {
         else {
             const accessToken = createToken(user);
             res.cookie("access-token", accessToken, {
-                maxAge: 60 * 60 * 24 * 30,
+                maxAge: 60*60*24*30,
                 httpOnly: true
             })
 
@@ -657,7 +592,6 @@ app.get('/profil/:id', validateToken, function (req, res) {
         _id: req.params.id
     }).then(data => {
         res.json(data);
-        // res.render('EditAnime', {data: data});
     })
         .catch(err => console.log(err))
 });
@@ -672,7 +606,6 @@ app.get('/deconnexion/', validateTokenID, function (req, res) {
             console.log("Hors ligne");
         })
         .catch(err => console.log(err));
-
 
     res.clearCookie('access-token')
     console.log("Déconnecté");

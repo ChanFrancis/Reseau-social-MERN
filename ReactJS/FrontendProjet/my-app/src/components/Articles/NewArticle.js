@@ -85,7 +85,7 @@ function MyBlog() {
 
                 <br /><br />
 
-                <label>Image :</label><br />
+                <label>Image :</label><br /> 
                 <input type='file' onChange={handleFileChange} />
 
                 <br /><br />

@@ -35,7 +35,7 @@ function Navbar() {
   const socketLogout = () => {
 
     if (socket) {
-      socket.on('logout', { userId: MeID }); 
+      socket.on('disconnect', { userId: MeID }); 
     }
   };
 

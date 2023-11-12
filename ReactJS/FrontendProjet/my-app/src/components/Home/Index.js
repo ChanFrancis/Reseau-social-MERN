@@ -13,12 +13,11 @@ function Index() {
     <React.Fragment>
       {/* <h1>Bienvenue sur AnimeME</h1> */}
       <div className='HEROContainer'>
-        <h1 className='IndexTitre'>Bienvenue à AnimeME!</h1>
         <div className='HERO'>
           <ControlledCarousel />
         </div>
-
       </div>
+      
       <div>
       <ArticlesImgOverlay />
       </div>

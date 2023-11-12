@@ -3,9 +3,9 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(18, 18, 18)  ;
-    width: 100%;
+    width: 80%;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .HEROContainer {
@@ -13,11 +13,6 @@
     margin-bottom: 5rem;
 }
 
-.IndexTitre{
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    display: none;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .HERO {

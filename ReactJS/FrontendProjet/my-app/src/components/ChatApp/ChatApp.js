@@ -32,10 +32,6 @@ function ChatApp() {
   }, []);
 
 
-  // socket.on('connect', {MeID})
-
-
-
   const [message, setMessage] = useState('')
   // Envoyer le message au serveur
   const sendMessage = (e) => {
@@ -69,7 +65,6 @@ function ChatApp() {
       default: return state
     }
   }
-
 
   const [state1, dispatch1] = useReducer(reducer1, initialState1)
 
