@@ -58,7 +58,7 @@ Les membres peuvent consulter la page, mais seuls les admins peuvent utiliser le
 ### 4. Page Messagerie (Socket IO)
 Description : <br>
 Les membres peuvent accéder au Chat privé et envoyer des messages aux autres membres. <br>
-L'utilisateur doit être connecter afin de consulter cette page.
+L'utilisateur doit être connecter afin de consulter cette page. <br>
 Certains comptes ont été parametrés pour être connectés en permanence.
 
 - Possibilité d’envoyer un message privé à une autre personne
