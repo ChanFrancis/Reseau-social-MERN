@@ -9,14 +9,14 @@ Développement d'un réseau social (back-end et front-end) avec MongoDB, Express
 ODM : Mongoose <br><br>
 Visualisation du résultat :
 Render https://frontendprojet.onrender.com/
-
+<br><br>
 
 Afin de tester toutes les fonctionnalités, vous pouvez créer un compte simple dans la page de connexion. Dans le cas où vous souhaitez ne pas créer de compte vous pouvez utilisez ces 2 comptes afin d'utiliser la messagerie et autres :
 
-Identifiant : Lucy
+Identifiant : Lucy<br>
 Mot de Passe : 123
-
-Identifiant : Fred
+<br><br>
+Identifiant : Fred<br>
 Mot de Passe : 123
 
 
