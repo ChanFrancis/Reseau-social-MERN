@@ -7,6 +7,19 @@
 <h3>Projet :</h3>
 Développement d'un réseau social (back-end et front-end) avec MongoDB, Express, React et NodeJS (MERN Stack).<br>
 ODM : Mongoose <br><br>
+Visualisation du résultat :
+Render https://frontendprojet.onrender.com/
+
+
+Afin de tester toutes les fonctionnalités, vous pouvez créer un compte simple dans la page de connexion. Dans le cas où vous souhaitez ne pas créer de compte vous pouvez utilisez ces 2 comptes afin d'utiliser la messagerie et autres :
+
+Identifiant : Lucy
+Mot de Passe : 123
+
+Identifiant : Fred
+Mot de Passe : 123
+
+
 
 <h2>Fonctionnalité</h2> 
 
@@ -46,6 +59,7 @@ Les membres peuvent consulter la page, mais seuls les admins peuvent utiliser le
 Description : <br>
 Les membres peuvent accéder au Chat privé et envoyer des messages aux autres membres. <br>
 L'utilisateur doit être connecter afin de consulter cette page.
+Certains comptes ont été parametrés pour être connectés en permanence.
 
 - Possibilité d’envoyer un message privé à une autre personne
 - Possibilité de voir si les membres sont connectés
