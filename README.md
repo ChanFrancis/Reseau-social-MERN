@@ -4,13 +4,14 @@
 
 <img src="https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/98e443ee-a2e1-45c9-ba3d-41407a4c17db" width="100%" onclick="return false;">
 <br>
-Le contenu peut prendre un peu de temps à charger.
-<br>
 <h3>Projet :</h3>
 Développement d'un réseau social (back-end et front-end) avec MongoDB, Express, React et NodeJS (MERN Stack).<br>
 ODM : Mongoose <br><br>
 Visualisation du résultat :
-Render https://frontendprojet.onrender.com/ <br>
+Render https://frontendprojet.onrender.com/ 
+<br>
+Le contenu peut prendre un peu de temps à charger.
+<br>
 Le back-end et le front-end ont été déployés dans des serveurs différents. Si vous utilisez Firefox, il se peut que vous ne puissiez pas vous connecter connectement avec les cookies. Il faudra dont retirer la protection renforcée contre le pistage (le petit boulier en haut, à gauche de l'URL) ou utiliser Chrome.<br>
 En cas d'inactivité, le back-end se mettra en veille. Il faudra attrendre un petit peu avant qu'il se relance.
 <br><br>
