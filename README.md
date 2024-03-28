@@ -4,6 +4,8 @@
 
 <img src="https://github.com/ChanFrancis/ProjetMERNstack/assets/108381402/98e443ee-a2e1-45c9-ba3d-41407a4c17db" width="100%" onclick="return false;">
 <br>
+Le contenu peut prendre un peu de temps à charger.
+<br>
 <h3>Projet :</h3>
 Développement d'un réseau social (back-end et front-end) avec MongoDB, Express, React et NodeJS (MERN Stack).<br>
 ODM : Mongoose <br><br>
