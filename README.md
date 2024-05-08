@@ -9,8 +9,8 @@ Développement d'un réseau social (back-end et front-end) avec MongoDB, Express
 ODM : Mongoose <br><br>
 Visualisation du résultat :
 Render https://frontendprojet.onrender.com/ 
-<br> ! c'est un service gratuit, le back end peut prendre un peu de temps pour se lancer (un peu moins d'une minute).
-<br>
+<br> <strong>! c'est un service gratuit, le back end peut prendre un peu de temps pour se lancer (un peu moins d'une minute).</strong>
+<br><br>
 Le back-end et le front-end ont été déployés dans des serveurs différents. Si vous utilisez Firefox, il se peut que vous ne puissiez pas vous connecter connectement avec les cookies. Il faudra dont retirer la protection renforcée contre le pistage (le petit boulier en haut, à gauche de l'URL) ou utiliser Chrome.<br>
 En cas d'inactivité, le back-end se mettra en veille. Il faudra attrendre un petit peu avant qu'il se relance.
 <br><br>
